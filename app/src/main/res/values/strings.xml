@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ROG PC</string>
+    <string name="action_settings">Settings</string>
+    <string name="cnme">ROG PC INC</string>
+    <string name="cdes">company photo</string>
+    <string name="Con">CONTACT</string>
+    <string name="eml">Email</string>
+    <string name="emlt">abc@gmail.com</string>
+    <string name="phn">Phone</string>
+    <string name="phnt">123456789</string>
+    <string name="web">Website</string>
+    <string name="webt">www.rogpc.com</string>
+    <string name="add">Address</string>
+    <string name="addt">kolar road bhopal 460661 </string>
+    <string name="des">Description</string>
+    <string name="dest">Established in 1995 .Leading the personal computer market since origin .</string>
+    <string name="btn">Submit</string>
+    <string name="oph">Operational Hours</string>
+    <string name="opht">10Am-10PM</string>
+</resources>
