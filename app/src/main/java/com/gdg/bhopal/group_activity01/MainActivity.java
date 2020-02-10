@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,Main2Activity.class);
                 i.putExtra("Cname",Cname.getText().toString());
+                i.putExtra("email",email.getText().toString());
+                i.putExtra("phone",phone.getText().toString());
+                i.putExtra("website",website.getText().toString());
+                i.putExtra("des",des.getText().toString());
+                i.putExtra("add",add.getText().toString());
+                i.putExtra("oph",oph.getText().toString());
+
                 startActivity(i);      }
             });
 
