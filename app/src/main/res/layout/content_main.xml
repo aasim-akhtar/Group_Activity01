@@ -24,15 +24,18 @@
 
             />
 
-        <TextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:gravity="center"
-            android:text="@string/cnme"
+            android:inputType="text"
+            android:hint="@string/cnme"
             android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            android:id="@+id/EdtCname"
+            />
 
 
     </LinearLayout>
@@ -69,16 +72,19 @@
 
                 android:textSize="25sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="40"
                 android:gravity="center"
-
-                android:text="@string/emlt"
+                android:hint="@string/eml"
+                android:textColorHint="#FFFFFF"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp" />
 
+                android:inputType="textEmailAddress"
+                android:id="@+id/Edtemail"
+                />
+            <!--"#"-->
         </LinearLayout>
 
         <LinearLayout
@@ -93,13 +99,17 @@
                 android:textColor="#FFFFFF"
                 android:textSize="25sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="40"
                 android:gravity="center"
-                android:text="@string/phnt"
+                android:hint="@string/phn"
                 android:textColor="#FFFFFF"
+                android:id="@+id/Edtphone"
+
+                android:inputType="phone"
+                android:textColorHint="#FFFFFF"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -118,16 +128,18 @@
                 android:textColor="#FFFFFF"
                 android:textSize="25sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:autofillHints="@string/web"
                 android:ems="40"
-                android:gravity="center"
-                android:text="@string/webt"
                 android:textColor="#FFFFFF"
+                android:id="@+id/Edtweb"
 
-
-                android:textSize="20sp" />
+                android:gravity="center"
+                android:hint="@string/web"
+                android:inputType="textWebEditText"
+                android:textColorHint="#FFFFFF" />
 
         </LinearLayout>
 
@@ -141,22 +153,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
+
             android:text="@string/des"
             android:textColor="#FFFFFF"
             android:textSize="21sp" />
 
-        <TextView
+        <EditText
             android:layout_width="298dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_weight=".7"
-            android:ems="10"
-            android:text="@string/dest"
-            android:layout_marginLeft="5dp"
-            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:id="@+id/Edtdes"
+            android:hint="@string/des"
+            android:inputType="textMultiLine"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textColorHint="#FFFFFF" />
 
 
     </LinearLayout>
@@ -177,15 +187,18 @@
             android:textColor="#FFFFFF"
             android:textSize="25sp" />
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
             android:ems="10"
             android:gravity="center"
-            android:text="@string/addt"
+            android:hint="@string/add"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:id="@+id/Edtadd"
+
+            android:inputType="textPostalAddress"
+            android:textColorHint="#FFFFFF" />
     </LinearLayout>
 
 
@@ -203,15 +216,17 @@
             android:textSize="25sp" />
 
 
-        <TextView
+        <EditText
             android:layout_width="113dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:ems="10"
-            android:text="@string/opht"
-            android:textColor="#FFFFFF"
+            android:hint="@string/oph"
+            android:id="@+id/Edtoph"
 
-            android:textSize="20sp" />
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
 
 
     </LinearLayout>

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">ROG PC</string>
+    <string name="app_name">Com Details Viewer</string>
     <string name="action_settings">Settings</string>
-    <string name="cnme">ROG PC INC</string>
+    <string name="cnme">Cname</string>
     <string name="cdes">company photo</string>
     <string name="Con">CONTACT</string>
     <string name="eml">Email</string>

@@ -13,9 +13,10 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-        Button btn ;
+        Button btn ; EditText Cname,email,phone,website,des,add,oph;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,13 +24,19 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        btn= findViewById(R.id.btn);
-
-
+        btn= (Button) findViewById(R.id.btn);
+        Cname =(EditText) findViewById(R.id.EdtCname);
+        email =(EditText)findViewById(R.id.Edtemail);
+        phone =(EditText)findViewById(R.id.Edtphone);
+        website =(EditText)findViewById(R.id.Edtweb);
+        des =(EditText)findViewById(R.id.Edtdes);
+        add=(EditText)findViewById(R.id.Edtadd);
+        oph=(EditText)findViewById(R.id.Edtoph);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,Main2Activity.class);
+                i.putExtra("Cname",Cname.getText().toString());
                 startActivity(i);      }
             });
 

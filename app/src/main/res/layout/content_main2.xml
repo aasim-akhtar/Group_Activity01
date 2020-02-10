@@ -32,7 +32,9 @@
             android:text="@string/cnme"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/TxtCname"
+            />
 
 
     </LinearLayout>
