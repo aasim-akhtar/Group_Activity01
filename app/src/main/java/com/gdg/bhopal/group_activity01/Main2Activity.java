@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
-            TextView Cname;
+            TextView Cname,email,phone,web,cont,add,oph;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,17 +20,22 @@ public class Main2Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         Cname =(TextView)findViewById(R.id.TxtCname);
-        String name =getIntent().getStringExtra("Cname");
-        Cname.setText(name);
+        email=(TextView)findViewById(R.id.Txtemail);
+        phone=(TextView)findViewById(R.id.Txtphne);
+        web =(TextView)findViewById(R.id.Txtweb);
+        cont=(TextView)findViewById(R.id.Txtcont);
+        add = (TextView)findViewById(R.id.Txtadd);
+        oph = (TextView)findViewById(R.id.Txtoph);
+        String cname =getIntent().getStringExtra("Cname");
+        Cname.setText(cname);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+
+
+
+
+
+
     }
 
 }
