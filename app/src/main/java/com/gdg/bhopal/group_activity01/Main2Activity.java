@@ -27,6 +27,14 @@ public class Main2Activity extends AppCompatActivity {
         add = (TextView)findViewById(R.id.Txtadd);
         oph = (TextView)findViewById(R.id.Txtoph);
         String cname =getIntent().getStringExtra("Cname");
+        String eml =getIntent().getStringExtra("email");
+        String phn =getIntent().getStringExtra("phone");
+        String wbs =getIntent().getStringExtra("website");
+        String ad = getIntent().getStringExtra("add");
+        String cnt = getIntent().getStringExtra("des");
+        String op =getIntent().getStringExtra("oph");
+
+
         Cname.setText(cname);
 
 
