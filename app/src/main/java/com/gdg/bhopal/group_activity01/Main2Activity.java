@@ -1,5 +1,6 @@
 package com.gdg.bhopal.group_activity01;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,10 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
             TextView Cname,email,phone,web,cont,add,oph;
+            Button btn1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,17 @@ public class Main2Activity extends AppCompatActivity {
         add.setText(ad);
         oph.setText(op);
         cont.setText(cnt);
+        btn1 = (Button)findViewById(R.id.btn1);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Main2Activity.this,Main3Activity.class);
+                startActivity(i);
+
+            }
+        });
+
     }
 
 }
