@@ -36,14 +36,12 @@ public class Main2Activity extends AppCompatActivity {
 
 
         Cname.setText(cname);
-
-
-
-
-
-
-
-
+        email.setText(eml);
+        phone.setText(phn);
+        web.setText(wbs);
+        add.setText(ad);
+        oph.setText(op);
+        cont.setText(cnt);
     }
 
 }
